@@ -51,9 +51,8 @@
             <div id="breadcrumbs">
                 <a href="index.html">Home</a> &raquo; Request Quote
             </div>
+            <h1>Quote Request Form</h1>
             <form id="orderform" action="http://stungeye.com/school/webdev/thankyou.php" method="post" target="_blank">
-                <h1 class="brand"></h1>
-                <h1>Quote Request Form</h1>
                 <h2>Please fill the form to schedule an estimate.</h2>
                 <fieldset id="clientInfo">
                     <div class="formContent">
@@ -79,7 +78,6 @@
                             <li>
                                 <label for="province">Province</label>
                                 <select id="province" name="province">
-                                    <option value=""></option>
                                     <option value="AB">Alberta</option>
                                     <option value="BC">British Columbia</option>
                                     <option value="MB">Manitoba</option>
@@ -109,8 +107,8 @@
                                 <p class="shippingError error" id="emailformat_error">* Invalid email address</p>
                             </li>
                             <li>
-                                <label for="textarea" id ="textarea">Comments
-                                <textarea placeholder="Your Comments.." id="textarea"></textarea></label>
+                                <label for="textarea" id="textareaLabel">Comments
+                                    <textarea placeholder="Your Comments.." id="textarea"></textarea></label>
                             </li>
                         </ul>
                     </div>
@@ -119,13 +117,9 @@
                         <button type="reset" id="clear">Clear Form</button>
                     </p>
                 </fieldset>
+            </form>
         </div>
-
-        </form>
-
     </section>
-
-
     <footer>
         <ul id="bottomMenu">
             <li><a href="index.html">Home</a></li>
@@ -139,10 +133,10 @@
         <p>Copyright &copy; 2019 <a href="#">Alexander Gotfrid Enterprise</a></p>
 
         <ul>
-            <li id="address">2-410 Carpathia Road, Winnipeg, Manitoba</li>
+            <li id="myAddress">2-410 Carpathia Road, Winnipeg, Manitoba</li>
             <li><a href="https://goo.gl/maps/k2rTvzobnR52" target="_blank">Map</a></li>
         </ul>
-        <img src="pictures/logo.png" class= "logo" alt="LOGO" />
+        <img src="pictures/logo.png" class="logo" alt="LOGO" />
 
     </footer>
 </body>
