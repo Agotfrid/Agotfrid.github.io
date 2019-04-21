@@ -1,0 +1,517 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #e7e7e7;
+    width: 100%;
+    height: 100%;
+}
+
+body, section, p, header, footer, div, aside {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #363839;
+    margin: 10px 10px 10px 10px;
+    display: flex;
+    /* flex: 4; */
+    flex-direction: column;
+    min-height: 98%;
+    /* position: relative; */
+    border: 1px solid #b1b1b1;
+    border-radius: 10px;
+    padding: 10px;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 0px 0px 3px 3px #e7e7e7;
+}
+
+a {
+    text-decoration: none;
+    color: #f1efef;
+}
+
+a:hover {
+    color: orange;
+}
+
+/* ul.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+  } */
+
+/* #headerTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+} */
+
+/* #headerTop img {
+    justify-content: left;
+    align-self: left;
+} */
+
+#mediaBar ul {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding-bottom: 5px;
+}
+
+#mediaBar ul li {
+    padding-right: 5px;
+    height: 35px;
+    transition: 1s;
+}
+
+#mediaBar a {
+    font-size: 25px;
+    color: #c24839;
+    transition: 0.5s;
+}
+
+#mediaBar a:hover {
+    color: #c6c6c6;
+}
+
+#mediaBar ul li:last-child {
+    border-right: none;
+}
+
+/* #searchBar {
+    justify-content: right;
+    align-self: center;
+}
+
+#searchBar #search {
+    width: 90px;
+    height: 20px;
+} */
+
+/* #searchBar #searchButton {
+    height: 20px;
+    width: 50px;
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+} */
+
+#mainHeading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #c24839;
+    /* background-image: url("headerBackground.jpg"); */
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+    /* height: 100%; */
+    text-align: left;
+    width: 100%;
+    height: 195px;
+}
+
+#mainHeading h1 {
+    color: #c6c6c6;
+    position: absolute;
+    /* font-family: Cinzel;  */
+    text-shadow: 1px 1px 2px #000;
+    top: 10px;
+    left: 15px;
+    /* font-style: none; */
+    letter-spacing: 9px;
+    font-size: 23px;
+    font-weight: normal;
+}
+
+#mainHeading h2 {
+    color: #ddcfcf;
+    position: absolute;
+    bottom: 25px;
+    right: 40px;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+#primaryMenu {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #303030;
+    /* background-image: url("primaryMenuBackground.png"); */
+}
+
+#primaryMenu ul {
+    width: 100%;
+    list-style: none;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-self: center; */
+}
+
+#primaryMenu ul a {
+    color: #ddcfcf;
+    font-weight: bold;
+    font-size: 13px;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+#primaryMenu ul a:hover {
+    color: #c24839;
+}
+
+#primaryMenu ul li {
+    border: 1px solid #ddcfcf;
+    line-height: 40px;
+    /* background: url("primaryMenuBorder.png") no-repeat right; */
+    /* background-size: 2px 15px; */
+    /* height: 25px; */
+    /* padding: 0px 15px 0px 15px; */
+    transition: 1s;
+}
+
+#primaryMenu ul li:last-of-type {
+    background: none;
+}
+
+@media (min-width: 750px) {
+    /* #mainHeading{
+        height: 180px;
+    } */
+    #mediaBar ul {
+        justify-content: left;
+    }
+    #mainHeading h1 {
+        font-size: 36px;
+    }
+    #primaryMenu ul {
+        display: flex;
+        /* justify-content: space-around; */
+        /* flex-wrap: nowrap; */
+        justify-content: center;
+        align-self: center;
+    }
+    #primaryMenu ul li {
+        border: none;
+        transition: none;
+        /* height: 25px; */
+        padding: 0px 15px 0px 15px;
+    }
+    #primaryMenu ul a {
+        transition: 1s;
+    }
+}
+
+section {
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    display: flex;
+    flex: 2;
+    flex-direction: row;
+}
+
+#mainPage {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 15px 70px 20px;
+}
+
+#breadcrumbs {
+    margin: 0px 0px 0px -5px;
+    padding-bottom: 30px;
+    font-size: 11px;
+}
+
+#breadcrumbs a {
+    color: #c24839;
+}
+
+#mainPage .portrait {
+    float: left;
+    margin: 5px 20px 20px 0px;
+    ;
+}
+
+#mainPage h1 {
+    color: #f1efef;
+    font-size: 20px;
+    padding: 0px 0px 5px 0px;
+    margin: 0px 0px 10px 0px;
+    border-bottom: 1.5px solid #c24839;
+}
+
+#mainPage h2 {
+    color: #f1efef;
+    font-size: 14px;
+    padding: 0px 0px 5px 0px;
+    margin: 0px 0px 15px 0px;
+}
+
+#mainContent p {
+    display: relative;
+    color: #f1efef;
+    font-size: 13px;
+    line-height: 25px;
+}
+
+#mainContent a {
+    font-weight: bold;
+    color: #c24839;
+}
+
+#mainContent h4 {
+    color: #f1efef;
+    font-size: 12px;
+    padding: 0px 0px 5px 0px;
+    margin: 0px 0px 1px 0px;
+}
+
+#mainContent ul li {
+    color: #f1efef;
+    font-size: 12px;
+    padding: 0px 0px 5px 0px;
+    margin: 0px 0px 1px 0px;
+}
+
+#mainContent .resumeHeading{
+    color: #c24839;
+}
+
+.clear {
+    clear: both;
+}
+
+.center {
+    text-align: center;
+}
+
+ul li {
+    list-style: none;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    /* margin-top: 50px; */
+    clear: both;
+    font-size: 12px;
+}
+
+#bottomMenu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    align-content: flex-end;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.logo {
+    margin: 15px;
+}
+
+#bottomMenu li {
+    margin-right: 3px;
+    border-right: solid 1px #777;
+    padding: 0 5px;
+}
+
+#bottomMenu li:last-child {
+    border-right: none;
+}
+
+#bottomMenu a {
+    color: #c24839;
+}
+
+#bottomMenu a:hover {
+    color: orange;
+}
+
+footer p {
+    justify-content: center;
+    padding: 5px 5px 5px 5px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    white-space: nowrap;
+    text-align: center;
+}
+
+footer ul li {
+    margin-right: 3px;
+    border-right: solid 1px #777;
+    padding: 0 5px;
+    line-height: 10px;
+}
+
+footer ul li:last-child {
+    border-right: none;
+}
+
+footer ul li a {
+    color: #c24839;
+}
+
+footer #address {
+    color: #808185;
+}
+
+.fa {
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Start of Shipping Information styles */
+
+ul li label {
+    font-weight: bold;
+    color: #c24839;
+}
+
+#clientInfo .formContent {
+    float: left;
+    width: 100%;
+}
+
+#clientInfo .right {
+    float: right;
+    width: 50%;
+}
+
+#clientInfo h3 {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#clientInfo .formContent ul li {
+    width: 90%;
+    /*background: #EEE;*/
+    /*border:1px solid black;*/
+    border-radius: 5px;
+    padding: 8px 10px;
+    box-sizing: border-box;
+    margin: 0px auto;
+}
+
+#clientInfo .formContent label {
+    display: inline-block;
+    width: 100px;
+    margin-top: 2px;
+}
+
+#clientInfo .formContent input {
+    display: inline-block;
+    width: 50%;
+    height: 26px;
+    padding-left: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+#clientInfo .formContent select {
+    display: inline-block;
+    width: 53%;
+    height: 30px;
+    padding-left: 5px;
+    font-size: 14px;
+    line-height: 26px;
+    padding-top: 3px;
+    color: #333;
+}
+
+#clientInfo #textarea {
+    /* font-family: "Cinzel"; */
+    margin-top: 10px;
+    width: 250px;
+    height: 100px;
+}
+
+#gotoShipping {
+    margin-left: 15px;
+    width: 90%;
+    font-size: .8em;
+}
+
+#gotoShipping a:link, #gotoShipping a:visited {
+    color: blue;
+}
+
+#gotoShipping a:hover, #gotoShipping a:focus {
+    text-decoration: none;
+}
+
+/* End of Shipping Information styles */
+
+/* Error Styles */
+
+.error {
+    color: red;
+}
+
+.shippingError {
+    margin-left: 110px;
+}
+
+.cardError {
+    margin-left: 130px;
+}
+
+.cardTypeError {
+    margin-left: 30px;
+}
+
+/* End of Error Styles 8?
+
+/* Submit Button */
+
+#submit, #clear {
+    display: inline-block;
+    background: #C1F0F6;
+    margin: 3px auto;
+    width: 42%;
+    height: 36px;
+    color: #333;
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+#submit {
+    margin-left: 15px;
+}
+
+#submit {
+    margin-right: 15px;
+}
+
+#submit:hover, #clear:hover {
+    /*box-shadow: 2px 2px 2px #000;*/
+    color: #c24839;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.buttons {
+    display: block;
+}
