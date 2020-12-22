@@ -19,22 +19,7 @@
   <body>
   
   <footer>
-        <ul id="bottomMenu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">RSS</a></li>
-            <li><a href="#">Terms</a></li>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Site Map</a></li>
-            <li><a href="AboutPage.html">Contact Us</a></li>
-        </ul>
-
-        <p>Copyright &copy; 2019 <a href="#">Alexander Gotfrid Enterprise</a></p>
-
-        <ul>
-            <li id="myAddress">2-410 Carpathia Road, Winnipeg, Manitoba</li>
-            <li><a href="https://goo.gl/maps/k2rTvzobnR52" target="_blank">Map</a></li>
-        </ul>
-
+        <p>Copyright &copy; 2019 <a href="#">Alexander Gotfrid</a></p>
     </footer>
 
     <!-- Optional JavaScript -->
